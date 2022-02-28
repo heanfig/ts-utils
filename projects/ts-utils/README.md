@@ -1,24 +1,44 @@
-# TsUtils
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+# @heanfig/ts-utils
 
-## Code scaffolding
+  
+> Fast, generic typescript/angular utility functions.
 
-Run `ng generate component component-name --project ts-utils` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ts-utils`.
-> Note: Don't forget to add `--project ts-utils` or else it will be added to the default project in your `angular.json` file. 
+Install with [npm](https://www.npmjs.com/)
 
-## Build
+```sh
+$ npm i @heanfig/ts-utils --save
+```
 
-Run `ng build ts-utils` to build the project. The build artifacts will be stored in the `dist/` directory.
+## <code>@Memoize</code> Decorator
 
-## Publishing
+**Wrapper for <code>memoizee</code> package**
+https://www.npmjs.com/package/memoizee
 
-After building your library with `ng build ts-utils`, go to the dist folder `cd dist/ts-utils` and run `npm publish`.
+Basic Import 
 
-## Running unit tests
+```ts
+import { Memoize } from '@heanfig/ts-utils';
+```
 
-Run `ng test ts-utils` to execute the unit tests via [Karma](https://karma-runner.github.io).
+using in component
 
-## Further help
+```ts
+export class DemoComponent {
+	
+	@Memoize()
+	public getRandomInt(value:number): number {
+		return value ** 34;
+	}
+}
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## ¿ Whats next ?
+
+  
+To get more help [contact me](mailto:heanfig@gmail.com) or see.
+
+#### References
+
+https://www.npmjs.com/package/memoizee
