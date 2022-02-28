@@ -1,0 +1,17 @@
+{
+  "name": "@heanfig/ts-utils",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^13.2.0",
+    "@angular/core": "^13.2.0",
+    "@types/memoizee": "^0.4.7",
+    "memoizee": "^0.4.15"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  }
+}
